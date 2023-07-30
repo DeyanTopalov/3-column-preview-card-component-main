@@ -1,0 +1,27 @@
+:root {
+  /* Primary Colors */
+
+  --clr-orange: hsl(31, 77%, 52%);
+  --clr-cyan: hsl(184, 100%, 22%);
+  --clr-dar-cyan: hsl(179, 100%, 13%);
+
+  /* Secondary Colors */
+  --clr-transp-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
+  --clr-light-gray: hsl(0, 0%, 95%); /* Bg, Headings, Buttons */
+
+  /* Others */
+
+  --ff-body: "Lexend Deca", sans-serif;
+  --ff-headings: "Big Shoulders Display", cursive;
+
+  --fs-regular: 0.9375rem; /* 15px */
+  --fs-xxl: 2.5rem; /* 40px */
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --spacing-s: 0.5rem;
+  --spacing-m: 1rem;
+  --spacing-l: 1.5rem;
+  --spacing-xl: 2rem;
+}
