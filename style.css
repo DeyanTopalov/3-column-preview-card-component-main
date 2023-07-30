@@ -24,4 +24,16 @@
   --spacing-m: 1rem;
   --spacing-l: 1.5rem;
   --spacing-xl: 2rem;
+
+  /* Desktop */
+  /* text to border left/top/bottom(& kinda right) 3rem 48px */
+  /* svg to top border 3rem 48px */
+  /* heading to svg 35px 2.1875rem */
+  /* paragraph to heading 25px 1.5625rem */
+  /* Button to paragraph 83px 5.1875rem */
+  /* Button brd-radius 25px 1.5625rem */
+  /* Card brd-rad 8px 0.5rem */
+
+  /* Mobile */
+  /* Button to paragraph 25px 1.5625rem */
 }
