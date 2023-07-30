@@ -37,3 +37,52 @@
   /* Mobile */
   /* Button to paragraph 25px 1.5625rem */
 }
+
+/* Global Styles */
+
+body {
+  min-height: 100vh;
+  background-color: var(--clr-light-gray);
+  padding: 5.5rem 1.5rem;
+  display: grid;
+  place-content: center;
+  font-family: var(--ff-body);
+  font-size: var(--fs-regular);
+  font-weight: var(--fw-regular);
+  color: var(--clr-transp-white);
+}
+
+/* Card Styles */
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: var(--spacing-s);
+  overflow: hidden;
+}
+
+.sedans {
+  background-color: var(--clr-orange);
+}
+
+.suvs {
+  background-color: var(--clr-cyan);
+}
+
+.luxury {
+  background-color: var(--clr-dar-cyan);
+}
+
+.card__sections {
+  padding: 3rem;
+  display: grid;
+  gap: 1.5rem; /* ---- Temporary ---- */
+}
+
+.card_sections_heading {
+  font-family: var(--ff-headings);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-xxl);
+  text-transform: uppercase;
+  /* color: var(--clr-light-gray); */
+}
