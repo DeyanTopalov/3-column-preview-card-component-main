@@ -3,7 +3,7 @@
 
   --clr-orange: hsl(31, 77%, 52%);
   --clr-cyan: hsl(184, 100%, 22%);
-  --clr-dar-cyan: hsl(179, 100%, 13%);
+  --clr-dark-cyan: hsl(179, 100%, 13%);
 
   /* Secondary Colors */
   --clr-transp-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
@@ -49,7 +49,28 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-regular);
   font-weight: var(--fw-regular);
-  color: var(--clr-transp-white);
+  color: var(--clr-light-gray);
+}
+
+/* Utility Styles */
+
+.bg-orange {
+  background-color: var(--clr-orange);
+}
+.text-orange {
+  color: var(--clr-orange);
+}
+.bg-cyan {
+  background-color: var(--clr-cyan);
+}
+.text-cyan {
+  color: var(--clr-cyan);
+}
+.bg-dark-cyan {
+  background-color: var(--clr-dark-cyan);
+}
+.text-dark-cyan {
+  color: var(--clr-dark-cyan);
 }
 
 /* Card Styles */
@@ -59,18 +80,6 @@ body {
   grid-template-columns: 1fr;
   border-radius: var(--spacing-s);
   overflow: hidden;
-}
-
-.sedans {
-  background-color: var(--clr-orange);
-}
-
-.suvs {
-  background-color: var(--clr-cyan);
-}
-
-.luxury {
-  background-color: var(--clr-dar-cyan);
 }
 
 .card__sections {
@@ -84,5 +93,22 @@ body {
   font-weight: var(--fw-bold);
   font-size: var(--fs-xxl);
   text-transform: uppercase;
-  /* color: var(--clr-light-gray); */
+}
+
+.card_sections_description {
+  color: var(--clr-transp-white);
+}
+
+.button {
+  border: none;
+  border-radius: 1.5625rem; /* 25px */
+  width: fit-content;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+}
+
+.button:is(:hover, :focus) {
+  background-color: transparent;
+  border: solid var(--clr-light-gray) 2px;
+  color: var(--clr-light-gray);
 }
