@@ -6,16 +6,20 @@
   --clr-dark-cyan: hsl(179, 100%, 13%);
 
   /* Secondary Colors */
-  --clr-transp-white: hsla(0, 0%, 100%, 0.75); /* Paragraphs */
-  --clr-light-gray: hsl(0, 0%, 95%); /* Bg, Headings, Buttons */
+  --clr-transp-white: hsla(0, 0%, 100%, 0.75);
+  /* Paragraphs */
+  --clr-light-gray: hsl(0, 0%, 95%);
+  /* Bg, Headings, Buttons */
 
   /* Others */
 
   --ff-body: "Lexend Deca", sans-serif;
   --ff-headings: "Big Shoulders Display", cursive;
 
-  --fs-regular: 0.9375rem; /* 15px */
-  --fs-xxl: 2.5rem; /* 40px */
+  --fs-regular: 0.9375rem;
+  /* 15px */
+  --fs-xxl: 2.5rem;
+  /* 40px */
 
   --fw-regular: 400;
   --fw-bold: 700;
@@ -49,18 +53,23 @@ body {
 .bg-orange {
   background-color: var(--clr-orange);
 }
+
 .text-orange {
   color: var(--clr-orange);
 }
+
 .bg-cyan {
   background-color: var(--clr-cyan);
 }
+
 .text-cyan {
   color: var(--clr-cyan);
 }
+
 .bg-dark-cyan {
   background-color: var(--clr-dark-cyan);
 }
+
 .text-dark-cyan {
   color: var(--clr-dark-cyan);
 }
@@ -78,7 +87,8 @@ body {
 .card__sections {
   padding: 3rem;
   display: grid;
-  gap: 1.5rem; /* ---- Test if matches the design ---- */
+  gap: 1.5rem;
+  /* ---- Test if matches the design ---- */
 }
 
 .card_sections_heading {
@@ -94,7 +104,8 @@ body {
 
 .button {
   border: none;
-  border-radius: 1.5625rem; /* 25px */
+  border-radius: 1.5625rem;
+  /* 25px */
   width: fit-content;
   padding: var(--spacing-s) var(--spacing-l);
   cursor: pointer;
@@ -107,18 +118,25 @@ body {
   color: var(--clr-light-gray);
 }
 
-@media (min-width: 600px) {
+/* 600px */
+@media (min-width: 37.5rem) {
   .button {
     margin-top: 2.5rem;
   }
 }
 
-@media (min-width: 800px) {
+/* 800px */
+@media (min-width: 50rem) {
+  body {
+    padding: 12rem 1.5rem 5.5rem 1.5rem;
+  }
+
   .card {
     max-width: var(--max-width-desktop);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .button {
     margin-top: 3.75rem;
   }
