@@ -20,27 +20,14 @@
   --fw-regular: 400;
   --fw-bold: 700;
 
-  --spacing-s: 0.5rem;
+  --spacing-xs: 0.5rem;
+  --spacing-s: 0.75rem;
   --spacing-m: 1rem;
   --spacing-l: 1.5rem;
   --spacing-xl: 2rem;
 
   --max-width-mobile: 35rem;
   --max-width-desktop: 57.5rem;
-
-  /* Desktop */
-  /* max width 57.5rem 920px */
-  /* text to border left/top/bottom(& kinda right) 3rem 48px */
-  /* svg to top border 3rem 48px */
-  /* heading to svg 35px 2.1875rem */
-  /* paragraph to heading 25px 1.5625rem */
-  /* Button to paragraph 83px 5.1875rem */
-  /* Button brd-radius 25px 1.5625rem */
-  /* Card brd-rad 8px 0.5rem */
-
-  /* Mobile */
-  /* max-width:  35rem 560px*/
-  /* Button to paragraph 25px 1.5625rem */
 }
 
 /* Global Styles */
@@ -84,14 +71,14 @@ body {
   max-width: var(--max-width-mobile);
   display: grid;
   grid-template-columns: 1fr;
-  border-radius: var(--spacing-s);
+  border-radius: var(--spacing-xs);
   overflow: hidden;
 }
 
 .card__sections {
   padding: 3rem;
   display: grid;
-  gap: 1.5rem; /* ---- Temporary ---- */
+  gap: 1.5rem; /* ---- Test if matches the design ---- */
 }
 
 .card_sections_heading {
@@ -109,14 +96,21 @@ body {
   border: none;
   border-radius: 1.5625rem; /* 25px */
   width: fit-content;
-  padding: 0.75rem 2rem;
+  padding: var(--spacing-s) var(--spacing-l);
   cursor: pointer;
+  background-color: var(--clr-light-gray);
 }
 
 .button:is(:hover, :focus) {
   background-color: transparent;
   border: solid var(--clr-light-gray) 2px;
   color: var(--clr-light-gray);
+}
+
+@media (min-width: 600px) {
+  .button {
+    margin-top: 2.5rem;
+  }
 }
 
 @media (min-width: 800px) {
