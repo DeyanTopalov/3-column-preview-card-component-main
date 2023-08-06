@@ -25,7 +25,11 @@
   --spacing-l: 1.5rem;
   --spacing-xl: 2rem;
 
+  --max-width-mobile: 35rem;
+  --max-width-desktop: 57.5rem;
+
   /* Desktop */
+  /* max width 57.5rem 920px */
   /* text to border left/top/bottom(& kinda right) 3rem 48px */
   /* svg to top border 3rem 48px */
   /* heading to svg 35px 2.1875rem */
@@ -35,6 +39,7 @@
   /* Card brd-rad 8px 0.5rem */
 
   /* Mobile */
+  /* max-width:  35rem 560px*/
   /* Button to paragraph 25px 1.5625rem */
 }
 
@@ -76,6 +81,7 @@ body {
 /* Card Styles */
 
 .card {
+  max-width: var(--max-width-mobile);
   display: grid;
   grid-template-columns: 1fr;
   border-radius: var(--spacing-s);
@@ -111,4 +117,15 @@ body {
   background-color: transparent;
   border: solid var(--clr-light-gray) 2px;
   color: var(--clr-light-gray);
+}
+
+@media (min-width: 800px) {
+  .card {
+    max-width: var(--max-width-desktop);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .button {
+    margin-top: 3.75rem;
+  }
 }
